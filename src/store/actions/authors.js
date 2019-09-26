@@ -31,6 +31,7 @@ export const postAuthor = (newAuthor, closeModal) => {
   return async dispatch => {
     try {
       const res = await instance.post("/api/authors/", newAuthor);
+
       const author = res.data;
       dispatch(resetErrors());
       dispatch({

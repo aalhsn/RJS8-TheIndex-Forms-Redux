@@ -16,6 +16,7 @@ class AddBookModal extends Component {
     const { open } = this.state;
     return (
       <div>
+        {console.log(this.props.author)}
         <Modal open={open} onClose={this.onCloseModal} center>
           <BookForm author={this.props.author} closeModal={this.onCloseModal} />
         </Modal>
